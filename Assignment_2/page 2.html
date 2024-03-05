@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div {
+      background-color: #fff;
+      display: flex;
+      max-width: 480px;
+      width: 100%;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 16px 0;
+    }
+    .div-2 {
+      width: 100%;
+      padding: 0 20px;
+    }
+    .div-3 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-3 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 28%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column {
+        width: 100%;
+      }
+    }
+    .div-4 {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 16px;
+      color: #000;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .img {
+      aspect-ratio: 0.81;
+      object-fit: auto;
+      object-position: center;
+      width: 103px;
+      align-self: center;
+    }
+    .div-5 {
+      font-family: Inter, sans-serif;
+    }
+    .column-2 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 18%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-2 {
+        width: 100%;
+      }
+    }
+    .div-6 {
+      display: flex;
+      margin-top: 46px;
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+      color: #000;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .img-2 {
+      aspect-ratio: 0.93;
+      object-fit: auto;
+      object-position: center;
+      width: 71px;
+    }
+    .div-7 {
+      font-family: Inter, sans-serif;
+      margin-top: 8px;
+    }
+    .column-3 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 54%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-3 {
+        width: 100%;
+      }
+    }
+    .div-8 {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+    .div-9 {
+      display: flex;
+      padding-right: 13px;
+      align-items: start;
+      justify-content: space-between;
+      gap: 7px;
+    }
+    .img-3 {
+      aspect-ratio: 1.3;
+      object-fit: auto;
+      object-position: center;
+      width: 44px;
+    }
+    .img-4 {
+      aspect-ratio: 1.33;
+      object-fit: auto;
+      object-position: center;
+      width: 44px;
+      margin-top: 5px;
+    }
+    .img-5 {
+      aspect-ratio: 1.3;
+      object-fit: auto;
+      object-position: center;
+      width: 44px;
+      margin-top: 4px;
+    }
+    .img-6 {
+      aspect-ratio: 1.3;
+      object-fit: auto;
+      object-position: center;
+      width: 44px;
+    }
+    .div-10 {
+      align-self: end;
+      display: flex;
+      margin-top: 7px;
+      padding-right: 10px;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 16px;
+      color: #000;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .div-11 {
+      align-self: start;
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0%;
+      flex-direction: column;
+    }
+    .img-7 {
+      aspect-ratio: 0.79;
+      object-fit: auto;
+      object-position: center;
+      width: 61px;
+      align-self: center;
+    }
+    .div-12 {
+      font-family: Inter, sans-serif;
+      margin-top: 8px;
+    }
+    .div-13 {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-8 {
+      aspect-ratio: 0.87;
+      object-fit: auto;
+      object-position: center;
+      width: 68px;
+    }
+    .div-14 {
+      font-family: Inter, sans-serif;
+      margin-top: 8px;
+    }
+    .div-15 {
+      margin-top: 42px;
+      width: 100%;
+      padding: 0 20px;
+    }
+    .div-16 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-16 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-4 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 15%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-4 {
+        width: 100%;
+      }
+    }
+    .div-17 {
+      color: #078ef0;
+      margin-top: 28px;
+      font: 400 47px Jomhuria, sans-serif;
+    }
+    .column-5 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 21%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-5 {
+        width: 100%;
+      }
+    }
+    .img-9 {
+      aspect-ratio: 0.59;
+      object-fit: auto;
+      object-position: center;
+      width: 94px;
+    }
+    .column-6 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 64%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-6 {
+        width: 100%;
+      }
+    }
+    .div-18 {
+      background-color: rgba(7, 142, 240, 0.3);
+      display: flex;
+      width: 100%;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 20px;
+      color: #000;
+      font-weight: 400;
+      margin: 8px auto 0;
+      padding: 22px 6px 2px 17px;
+    }
+    .div-19 {
+      align-self: center;
+      white-space: nowrap;
+      font: 32px Inter, sans-serif;
+    }
+    .div-20 {
+      margin-top: 16px;
+      white-space: nowrap;
+      font: 12px Inter, sans-serif;
+    }
+    .div-21 {
+      align-self: center;
+      display: flex;
+      margin-top: 16px;
+      align-items: center;
+      gap: 9px;
+      white-space: nowrap;
+    }
+    .div-22 {
+      font-family: Inter, sans-serif;
+      align-self: stretch;
+      flex-grow: 1;
+      margin: auto 0;
+    }
+    .img-10 {
+      aspect-ratio: 1.39;
+      object-fit: auto;
+      object-position: center;
+      width: 68px;
+      align-self: stretch;
+    }
+    .div-23 {
+      font-family: Inter, sans-serif;
+      align-self: stretch;
+      margin: auto 0;
+    }
+    .div-24 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 1px;
+    }
+    .div-25 {
+      font-family: Inter, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    .img-11 {
+      aspect-ratio: 1.25;
+      object-fit: auto;
+      object-position: center;
+      width: 45px;
+    }
+    .div-26 {
+      background-color: rgba(7, 142, 240, 0.28);
+      display: flex;
+      margin-top: 38px;
+      flex-direction: column;
+      font-size: 48px;
+      color: #000;
+      font-weight: 400;
+      padding: 7px 28px;
+    }
+    .div-27 {
+      font-family: Jomhuria, sans-serif;
+    }
+    .div-28 {
+      font-family: Jomhuria, sans-serif;
+      align-self: center;
+      margin-top: 22px;
+      white-space: nowrap;
+    }
+    .div-29 {
+      background-color: #d9d9d9;
+      display: flex;
+      margin-top: 39px;
+      width: 100%;
+      flex-direction: column;
+      padding: 14px 0 28px;
+    }
+    .div-30 {
+      background-color: #dababa;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      font-weight: 400;
+      padding: 3px 20px 11px;
+    }
+    .div-31 {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .div-32 {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0%;
+      flex-direction: column;
+      color: #000;
+    }
+    .div-33 {
+      font: 16px Inter, sans-serif;
+    }
+    .div-34 {
+      margin-top: 14px;
+      white-space: nowrap;
+      font: 64px Jomhuria, sans-serif;
+    }
+    .div-35 {
+      display: flex;
+      margin-top: 6px;
+      flex-grow: 1;
+      flex-basis: 0%;
+      flex-direction: column;
+      white-space: nowrap;
+    }
+    .div-36 {
+      color: #071ef0;
+      align-self: end;
+      font: 16px Inter, sans-serif;
+    }
+    .div-37 {
+      color: #d62121;
+      margin-top: 19px;
+      font: 20px Inter, sans-serif;
+    }
+    .div-38 {
+      color: #000;
+      margin-top: 12px;
+      font: 16px Inter, sans-serif;
+    }
+    .div-39 {
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 0 2px 0 20px;
+    }
+    .div-40 {
+      gap: 20px;
+      display: flex;
+    }
+    @media (max-width: 991px) {
+      .div-40 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0px;
+      }
+    }
+    .column-7 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 22%;
+      margin-left: 0px;
+    }
+    @media (max-width: 991px) {
+      .column-7 {
+        width: 100%;
+      }
+    }
+    .div-41 {
+      color: #078ef0;
+      margin-top: 11px;
+      font: 400 64px Jomhuria, sans-serif;
+    }
+    .column-8 {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 78%;
+      margin-left: 20px;
+    }
+    @media (max-width: 991px) {
+      .column-8 {
+        width: 100%;
+      }
+    }
+    .div-42 {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      font-size: 20px;
+      color: #072cf0;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .img-12 {
+      aspect-ratio: 2.44;
+      object-fit: auto;
+      object-position: center;
+      width: 100%;
+    }
+    .div-43 {
+      font-family: Inter, sans-serif;
+      font-style: italic;
+      align-self: end;
+      margin-top: 8px;
+    }
+    .div-44 {
+      align-self: center;
+      display: flex;
+      margin-top: 5px;
+      width: 280px;
+      max-width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+    .div-45 {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      gap: 7px;
+      padding: 0 0 6px 6px;
+    }
+    .div-46 {
+      font-family: Inter, sans-serif;
+      font-style: italic;
+      margin: auto 0;
+    }
+    .img-13 {
+      aspect-ratio: 1.09;
+      object-fit: auto;
+      object-position: center;
+      width: 26px;
+    }
+    .div-47 {
+      background-color: rgba(0, 0, 0, 1);
+      display: flex;
+      justify-content: space-between;
+      gap: 7px;
+      padding: 0 0 6px 8px;
+    }
+    .div-48 {
+      font-family: Inter, sans-serif;
+      font-style: italic;
+    }
+    .img-14 {
+      aspect-ratio: 1.09;
+      object-fit: auto;
+      object-position: center;
+      width: 26px;
+      z-index: 10;
+    }
+    .div-49 {
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 13px;
+      color: #000;
+      white-space: nowrap;
+      margin: 9px 0 0 18px;
+      padding: 0 20px;
+    }
+    .img-15 {
+      aspect-ratio: 2.5;
+      object-fit: auto;
+      object-position: center;
+      width: 128px;
+      align-self: start;
+      max-width: 100%;
+    }
+    .div-50 {
+      font: 400 48px Inter, sans-serif;
+    }
+    .div-51 {
+      display: flex;
+      flex-grow: 1;
+      flex-basis: 0%;
+      flex-direction: column;
+      margin: auto 0;
+    }
+    .div-52 {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .div-53 {
+      flex-grow: 1;
+      font: italic 900 32px Inter, sans-serif;
+    }
+    .div-54 {
+      align-self: start;
+      flex-grow: 1;
+      font: 400 14px Inter, sans-serif;
+    }
+    .div-55 {
+      align-self: end;
+      margin-top: 5px;
+      font: 400 14px Inter, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="div">
+    <div class="div-2">
+      <div class="div-3">
+        <div class="column">
+          <div class="div-4">
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/520c330a3c244d92a6599e11c930edf0a400d75331942557750f79e9578e1f46?apiKey=83bebce38431453485d1f969c965cd62&"
+              class="img"
+              alt=""
+            />
+            <div class="div-5">CATEGORIES</div>
+          </div>
+        </div>
+        <div class="column-2">
+          <div class="div-6">
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/59ae4a58ae40afbd696045a5fa8831f5ccb44cbd97cd7171eb108db39ad77efc?apiKey=83bebce38431453485d1f969c965cd62&"
+              class="img-2"
+              alt=""
+              
+            />
+            <div class="div-7">MEN</div>
+          </div>
+        </div>
+        <div class="column-3">
+          <div class="div-8">
+            <div class="div-9">
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b3d4164a7106b08f1f5927734e6a6e6b24bf8192d79753daad8c9fb46c73d7ce?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-3"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/1eadeb2c08a76bee3ee7bdfaec59f3ca1333993cea6a4ce32c6c049d805fd7e2?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-4"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/85da1b043213d7612d6f29c917c3a41e4cb91d67dfc292104d3858e4684b73c2?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-5"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9b04d4471d974b242e9b5028ee7d6e0adebf2d02c91148dd5a762f6e72858a5b?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-6"
+                alt=""
+              />
+            </div>
+            <div class="div-10">
+              <div class="div-11">
+                <img
+                  loading="lazy"
+                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5e340d1975bd583be8a18d319ea0206ce93a38abeb0be9bf34c695ad2f80e22?apiKey=83bebce38431453485d1f969c965cd62&"
+                  class="img-7"
+                  alt=""
+                />
+                <div class="div-12">WOMEN</div>
+              </div>
+              <div class="div-13">
+                <img
+                  loading="lazy"
+                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/151e5e102ccb18ac47b98fcc7a9bdfb3745733971abd66e7d9d939e59f06d7b0?apiKey=83bebce38431453485d1f969c965cd62&"
+                  class="img-8"
+                  alt=""
+                />
+                <div class="div-14">KIDS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div-15">
+      <div class="div-16">
+        <div class="column-4">
+          <div class="div-17">
+            MEGA
+            <br />
+            SALE
+          </div>
+        </div>
+        <div class="column-5">
+          <img
+            loading="lazy"
+            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e97db8d02e57aee5b5148541e2c07bac446523bce4568d526c3bf9693cb0b277?apiKey=83bebce38431453485d1f969c965cd62&"
+            class="img-9"
+            alt=""
+          />
+        </div>
+        <div class="column-6">
+          <div class="div-18">
+            <div class="div-19">
+              <span
+                style="
+                  font-family: Jomhuria, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-size: 64px;
+                "
+              >
+                FLAT
+              </span>
+              <span
+                style="
+                  font-family: Jomhuria, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-size: 64px;
+                  color: rgba(0, 0, 0, 1);
+                "
+              >
+                400 OFF
+              </span>
+            </div>
+            <div class="div-20">FREE SHOPPING & MORE KNOCKOUT OFFERS</div>
+            <div class="div-21">
+              <div class="div-22">ONLY ON</div>
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f358b9b2d2198741fe71d480eb11c4bf540b2ca5a91114a0d0f691a87e2b8015?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-10"
+                alt=""
+              />
+              <div class="div-23">APP</div>
+            </div>
+            <div class="div-24">
+              <div class="div-25">DOWNLOAD NOW</div>
+              <img
+                loading="lazy"
+                srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b2bb59c6668be21a8a0db0f3b353510dbfdb4847b9949f806ec6678989b68a9e?apiKey=83bebce38431453485d1f969c965cd62&"
+                class="img-11"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div-26">
+      <div class="div-27">SIGN UP TO GET AMAZING OFFERS</div>
+      <div class="div-28">FREE SHIPPING FOR YOU</div>
+    </div>
+    <div class="div-29">
+      <div class="div-30">
+        <div class="div-31">
+          <div class="div-32">
+            <div class="div-33">FIRST TIME ON MYNTRA</div>
+            <div class="div-34">
+              <span style="color: rgba(0, 0, 0, 1)">FLAT</span>
+              <span style="color: rgba(0, 0, 0, 1)">400 OFF</span>
+            </div>
+          </div>
+          <div class="div-35">
+            <div class="div-36">CODE :</div>
+            <div class="div-37">MYNTRA400</div>
+          </div>
+        </div>
+        <div class="div-38">JUST FOR YOU !</div>
+      </div>
+      <div class="div-39">
+        <div>
+          <div class="div-40">
+            <div class="column-7">
+              <div class="div-41">
+                MEGA
+                <br />
+                SALE
+              </div>
+            </div>
+            <div class="column-8">
+              <div class="div-42">
+                <img
+                  loading="lazy"
+                  srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/5a42e4de1d30375c516d387d43aed11c96fc6c28590258479fc432c1016ec476?apiKey=83bebce38431453485d1f969c965cd62&"
+                  class="img-12"
+                  alt=""
+                />
+                <div class="div-43">+ CASH ON DELIVERY</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-44">
+          <div class="div-45">
+            <div class="div-46">HIM</div>
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&"
+              class="img-13"
+              alt=""
+            />
+          </div>
+          <div class="div-47">
+            <div class="div-48">HER</div>
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0fd29ecf6981f2c0bc4f6f10f717123320b6b91f00621a027c50cfd50b95fc2f?apiKey=83bebce38431453485d1f969c965cd62&"
+              class="img-14"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div-49">
+      <img
+        loading="lazy"
+        srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d3ab7f621a33ecf320d5ab7ec535aad14f6e03d04ffcc145f2fddc563dfed7f2?apiKey=83bebce38431453485d1f969c965cd62&"
+        class="img-15"
+        alt=""
+      />
+      <div class="div-50">|</div>
+      <div class="div-51">
+        <div class="div-52">
+          <div class="div-53">10%</div>
+          <div class="div-54">INSTANT DISSCOUNT</div>
+        </div>
+        <div class="div-55">ON YES BANK CREDIT CARD</div>
+      </div>
+    </div>
+  </div>
+ 
+  
+</body>
+</html>

@@ -1,0 +1,134 @@
+<style>
+  .product-container {
+    background-color: #fff;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    padding: 28px 0;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .brand-header {
+    display: flex;
+    margin-left: 19px;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .brand-logo {
+    aspect-ratio: 1.3;
+    object-fit: auto;
+    object-position: center;
+    width: 26px;
+    fill: #000;
+    margin: auto 0;
+  }
+  .brand-name {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .product-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 781px;
+    margin-top: 29px;
+    width: 100%;
+    align-items: start;
+    color: #000;
+    white-space: nowrap;
+    padding: 4px 60px 612px 91px;
+  }
+  .product-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .offer-details,
+  .wishlist-section,
+  .add-to-bag-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 26px;
+    font-size: 20px;
+    color: #110200;
+    font-weight: 900;
+  }
+  .offer-text {
+    font-family: Inter, sans-serif;
+    font-style: italic;
+    background-color: rgba(214, 33, 33, 0.57);
+    justify-content: center;
+    padding: 10px 20px;
+  }
+  .add-to-bag-btn {
+    background-color: rgba(255, 0, 153, 0.78);
+    white-space: nowrap;
+    padding: 5px 38px;
+  }
+  .button-icon {
+    aspect-ratio: 1.19;
+    object-fit: auto;
+    object-position: center;
+    width: 43px;
+  }
+  .action-text {
+    font-family: Inter, sans-serif;
+    font-style: italic;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+
+  @media (max-width: 991px) {
+    .brand-header,
+    .product-section {
+      max-width: 100%;
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 0 20px 40px 30px;
+    }
+    .product-image {
+      aspect-ratio: 1;
+    }
+    .offer-details,
+    .wishlist-section,
+    .add-to-bag-section {
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<div class="product-container">
+  <div class="brand-header">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/65bec9fb81988422867eea34974b75d4785b02690b8922498d49a97f9b16ce16?apiKey=83bebce38431453485d1f969c965cd62&" alt="Brand Logo" class="brand-logo" />
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/93f230112262a9ed44ae1c75b7f7bf6107fa1ebb475b35ce0c4c73d5d9a70ddc?apiKey=83bebce38431453485d1f969c965cd62&" alt="Second Brand Logo" class="brand-logo" />
+    <div class="brand-name">WROGEN</div>
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8849ba650a0fe78657f3cf9f538f95a6a4fe29f0625a7dffb2dcc9acd3bd2250?apiKey=83bebce38431453485d1f969c965cd62&" alt="Third Brand Logo" class="brand-logo" />
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/64d1958544e8fce7f99fbd2df4dae51ad37d345cb6e97ad1c31fe96fbfec68a8?apiKey=83bebce38431453485d1f969c965cd62&" alt="Fourth Brand Logo" class="brand-logo" />
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2386e9ba2485cfc51a71665cbb04f376eb9e6f7db7b870a67e23e769717e7c88?apiKey=83bebce38431453485d1f969c965cd62&" alt="Fifth Brand Logo" class="brand-logo" />
+  </div>
+  <section class="product-section">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0bb28bda9470d82957e94e7f707b7e350792b701969d6e8fcdbf7d3a90980bca?apiKey=83bebce38431453485d1f969c965cd62&" alt="" class="product-image" />DAMENSCH
+    <div class="offer-details">
+      <div class="offer-text">45% OFF</div>
+      <div class="add-to-bag-btn">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d7e7823292f67c9aa1bb802c22c1c6a496523d96527dc7d9bd30720d9e3f7b7?apiKey=83bebce38431453485d1f969c965cd62&" alt="Add to Bag Icon" class="button-icon" />
+        <div class="action-text">ADD TO BAG</div>
+      </div>
+    </div>
+    <div class="wishlist-section">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/253f2c1aa4aa1cdd14a471b63c7249b59483cf2f7dc8ec1159cf681a0eb243fc?apiKey=83bebce38431453485d1f969c965cd62&" alt="Wishlist Icon" class="button-icon" />
+      <div class="action-text">WISHLIST</div>
+    </div>
+  </section>
+</div>
